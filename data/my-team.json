@@ -1,0 +1,106 @@
+[
+  {
+    "owner": "marc",
+    "player_name": "ruben",
+    "position": "pt",
+    "value": 2618000,
+    "clause": 3927000,
+    "points": 26
+  },
+  {
+    "owner": "marc",
+    "player_name": "n araujo",
+    "position": "df",
+    "value": 1555000,
+    "clause": 2332500,
+    "points": 28
+  },
+  {
+    "owner": "marc",
+    "player_name": "r vezo",
+    "position": "df",
+    "value": 2542000,
+    "clause": 3813000,
+    "points": 24
+  },
+  {
+    "owner": "marc",
+    "player_name": "salisu",
+    "position": "df",
+    "value": 2207000,
+    "clause": 3310500,
+    "points": 24
+  },
+  {
+    "owner": "marc",
+    "player_name": "reguilon",
+    "position": "df",
+    "value": 8087000,
+    "clause": 12130500,
+    "points": 33
+  },
+  {
+    "owner": "marc",
+    "player_name": "yeary",
+    "position": "df",
+    "value": 5440000,
+    "clause": 8160000,
+    "points": 31
+  },
+  {
+    "owner": "marc",
+    "player_name": "fernando",
+    "position": "mc",
+    "value": 5242000,
+    "clause": 7863000,
+    "points": 27
+  },
+  {
+    "owner": "marc",
+    "player_name": "ontiveros",
+    "position": "mc",
+    "value": 1914000,
+    "clause": 4448907,
+    "points": 32
+  },
+  {
+    "owner": "marc",
+    "player_name": "lobotka",
+    "position": "mc",
+    "value": 2211000,
+    "clause": 4303500,
+    "points": 22
+  },
+  {
+    "owner": "marc",
+    "player_name": "cucurella",
+    "position": "mc",
+    "value": 8441000,
+    "clause": 12661500,
+    "points": 31
+  },
+  {
+    "owner": "marc",
+    "player_name": "thomas",
+    "position": "mc",
+    "value": 5180000,
+    "clause": 7770000,
+    "points": 35
+  },
+  {
+    "owner": "marc",
+    "player_name": "i williams",
+    "position": "dl",
+    "value": 9987000,
+    "clause": 14980500,
+    "points": 29
+  },
+  {
+    "owner": "marc",
+    "player_name": "lucas perez",
+    "position": "dl",
+    "value": 1663000,
+    "clause": 2494500,
+    "points": 25
+  }
+]

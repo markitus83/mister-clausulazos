@@ -1,0 +1,1730 @@
+[
+  {
+    "owner": "juan",
+    "player_name": "vaclik",
+    "position": "pt",
+    "value": 5227000,
+    "clause": 7840500,
+    "points": 20
+  },
+  {
+    "owner": "juan",
+    "player_name": "nyom",
+    "position": "df",
+    "value": 1078000,
+    "clause": 1617000,
+    "points": 20
+  },
+  {
+    "owner": "juan",
+    "player_name": "diego carlos",
+    "position": "df",
+    "value": 4371000,
+    "clause": 6556500,
+    "points": 26
+  },
+  {
+    "owner": "juan",
+    "player_name": "gimenez",
+    "position": "df",
+    "value": 6480000,
+    "clause": 12013155,
+    "points": 31
+  },
+  {
+    "owner": "juan",
+    "player_name": "varane",
+    "position": "df",
+    "value": 6904000,
+    "clause": 10356000,
+    "points": 56
+  },
+  {
+    "owner": "juan",
+    "player_name": "pedro leon",
+    "position": "mc",
+    "value": 2027000,
+    "clause": 3605340,
+    "points": 25
+  },
+  {
+    "owner": "juan",
+    "player_name": "roberto torres",
+    "position": "mc",
+    "value": 5957000,
+    "clause": 11914000,
+    "points": 49
+  },
+  {
+    "owner": "juan",
+    "player_name": "iborra",
+    "position": "mc",
+    "value": 4038000,
+    "clause": 6057000,
+    "points": 30
+  },
+  {
+    "owner": "juan",
+    "player_name": "yangel herrera",
+    "position": "mc",
+    "value": 1294000,
+    "clause": 1941000,
+    "points": 27
+  },
+  {
+    "owner": "juan",
+    "player_name": "oyarzabal",
+    "position": "dl",
+    "value": 10391000,
+    "clause": 15586500,
+    "points": 52
+  },
+  {
+    "owner": "juan",
+    "player_name": "sandro",
+    "position": "dl",
+    "value": 1770000,
+    "clause": 3185235,
+    "points": 19
+  },
+  {
+    "owner": "oli",
+    "player_name": "diego lopez",
+    "position": "pt",
+    "value": 3176000,
+    "clause": 4764000,
+    "points": 17
+  },
+  {
+    "owner": "oli",
+    "player_name": "raillo",
+    "position": "df",
+    "value": 395000,
+    "clause": 1000000,
+    "points": 13
+  },
+  {
+    "owner": "oli",
+    "player_name": "d duarte",
+    "position": "df",
+    "value": 1416000,
+    "clause": 2124000,
+    "points": 28
+  },
+  {
+    "owner": "oli",
+    "player_name": "g sanchez",
+    "position": "df",
+    "value": 1711000,
+    "clause": 2566500,
+    "points": 36
+  },
+  {
+    "owner": "oli",
+    "player_name": "j angel",
+    "position": "df",
+    "value": 1824000,
+    "clause": 2736000,
+    "points": 27
+  },
+  {
+    "owner": "oli",
+    "player_name": "i baba",
+    "position": "mc",
+    "value": 1938000,
+    "clause": 2907000,
+    "points": 18
+  },
+  {
+    "owner": "oli",
+    "player_name": "rafinha",
+    "position": "mc",
+    "value": 4782000,
+    "clause": 7494060,
+    "points": 31
+  },
+  {
+    "owner": "oli",
+    "player_name": "chukwueze",
+    "position": "mc",
+    "value": 6209000,
+    "clause": 9313500,
+    "points": 31
+  },
+  {
+    "owner": "oli",
+    "player_name": "wakaso",
+    "position": "mc",
+    "value": 2263000,
+    "clause": 3394500,
+    "points": 31
+  },
+  {
+    "owner": "oli",
+    "player_name": "w carvalho",
+    "position": "mc",
+    "value": 1746000,
+    "clause": 2619000,
+    "points": 9
+  },
+  {
+    "owner": "oli",
+    "player_name": "a budimir",
+    "position": "dl",
+    "value": 1329000,
+    "clause": 2355000,
+    "points": 33
+  },
+  {
+    "owner": "oli",
+    "player_name": "griezman",
+    "position": "dl",
+    "value": 15846000,
+    "clause": 23769000,
+    "points": 47
+  },
+  {
+    "owner": "oli",
+    "player_name": "diego costa",
+    "position": "dl",
+    "value": 6634000,
+    "clause": 9976500,
+    "points": 27
+  },
+  {
+    "owner": "lucho",
+    "player_name": "courtais",
+    "position": "pt",
+    "value": 5529000,
+    "clause": 8293500,
+    "points": 19
+  },
+  {
+    "owner": "lucho",
+    "player_name": "a pedrosa",
+    "position": "df",
+    "value": 1101000,
+    "clause": 1651500,
+    "points": 17
+  },
+  {
+    "owner": "lucho",
+    "player_name": "d vila",
+    "position": "df",
+    "value": 851000,
+    "clause": 1276500,
+    "points": 23
+  },
+  {
+    "owner": "lucho",
+    "player_name": "r ely",
+    "position": "df",
+    "value": 3292000,
+    "clause": 4938000,
+    "points": 33
+  },
+  {
+    "owner": "lucho",
+    "player_name": "escalante",
+    "position": "mc",
+    "value": 211000,
+    "clause": 1000000,
+    "points": 18
+  },
+  {
+    "owner": "lucho",
+    "player_name": "santi cazorla",
+    "position": "mc",
+    "value": 10697000,
+    "clause": 16045500,
+    "points": 65
+  },
+  {
+    "owner": "lucho",
+    "player_name": "tomas pina",
+    "position": "mc",
+    "value": 1547000,
+    "clause": 2320500,
+    "points": 27
+  },
+  {
+    "owner": "lucho",
+    "player_name": "unai lopez",
+    "position": "mc",
+    "value": 930000,
+    "clause": 1542104,
+    "points": 18
+  },
+  {
+    "owner": "lucho",
+    "player_name": "benzema",
+    "position": "dl",
+    "value": 15473000,
+    "clause": 23209500,
+    "points": 60
+  },
+  {
+    "owner": "lucho",
+    "player_name": "braithwaite",
+    "position": "dl",
+    "value": 3507000,
+    "clause": 5260500,
+    "points": 29
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "soria",
+    "position": "pt",
+    "value": 3489000,
+    "clause": 5233500,
+    "points": 13
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "a moreno",
+    "position": "df",
+    "value": 1312000,
+    "clause": 1968000,
+    "points": 17
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "zaldua",
+    "position": "df",
+    "value": 2106000,
+    "clause": 3159000,
+    "points": 19
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "agbenyenu",
+    "position": "df",
+    "value": 669000,
+    "clause": 1003500,
+    "points": 7
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "sergi roberto",
+    "position": "df",
+    "value": 4191000,
+    "clause": 9264555,
+    "points": 22
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "dani garcia",
+    "position": "mc",
+    "value": 3468000,
+    "clause": 5202000,
+    "points": 25
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "denis suarez",
+    "position": "mc",
+    "value": 8128000,
+    "clause": 12192000,
+    "points": 33
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "koke",
+    "position": "mc",
+    "value": 8091000,
+    "clause": 12136500,
+    "points": 41
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "arambarri",
+    "position": "mc",
+    "value": 2165000,
+    "clause": 3247500,
+    "points": 24
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "oscar plano",
+    "position": "mc",
+    "value": 5641000,
+    "clause": 8461500,
+    "points": 45
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "joselu",
+    "position": "dl",
+    "value": 5360000,
+    "clause": 8040000,
+    "points": 40
+  },
+  {
+    "owner": "jesus gil",
+    "player_name": "loren",
+    "position": "dl",
+    "value": 6243000,
+    "clause": 9364500,
+    "points": 40
+  },
+  {
+    "owner": "nando",
+    "player_name": "oblak",
+    "position": "pt",
+    "value": 8606000,
+    "clause": 12909000,
+    "points": 29
+  },
+  {
+    "owner": "nando",
+    "player_name": "mendy",
+    "position": "df",
+    "value": 1480000,
+    "clause": 2721005,
+    "points": 12
+  },
+  {
+    "owner": "nando",
+    "player_name": "trippier",
+    "position": "df",
+    "value": 9167000,
+    "clause": 13750500,
+    "points": 34
+  },
+  {
+    "owner": "nando",
+    "player_name": "lodi",
+    "position": "df",
+    "value": 5738000,
+    "clause": 8607000,
+    "points": 28
+  },
+  {
+    "owner": "nando",
+    "player_name": "beñat",
+    "position": "mc",
+    "value": 766000,
+    "clause": 1332003,
+    "points": 22
+  },
+  {
+    "owner": "nando",
+    "player_name": "gonzalo melero",
+    "position": "mc",
+    "value": 563000,
+    "clause": 1000000,
+    "points": 14
+  },
+  {
+    "owner": "nando",
+    "player_name": "joan jordan",
+    "position": "mc",
+    "value": 10630000,
+    "clause": 15945000,
+    "points": 53
+  },
+  {
+    "owner": "nando",
+    "player_name": "oier",
+    "position": "mc",
+    "value": 690000,
+    "clause": 1177503,
+    "points": 16
+  },
+  {
+    "owner": "nando",
+    "player_name": "chicharito",
+    "position": "dl",
+    "value": 4108000,
+    "clause": 6162000,
+    "points": 5
+  },
+  {
+    "owner": "nando",
+    "player_name": "joao feliz",
+    "position": "dl",
+    "value": 13206000,
+    "clause": 19809000,
+    "points": 34
+  },
+  {
+    "owner": "nando",
+    "player_name": "luis suarez",
+    "position": "dl",
+    "value": 15098000,
+    "clause": 23332500,
+    "points": 34
+  },
+  {
+    "owner": "nando",
+    "player_name": "maxi gomez",
+    "position": "dl",
+    "value": 5533000,
+    "clause": 8601009,
+    "points": 37
+  },
+  {
+    "owner": "piojo",
+    "player_name": "ruben blanco",
+    "position": "pt",
+    "value": 5056000,
+    "clause": 7584000,
+    "points": 33
+  },
+  {
+    "owner": "piojo",
+    "player_name": "zubiria",
+    "position": "df",
+    "value": 1673000,
+    "clause": 2509500,
+    "points": 29
+  },
+  {
+    "owner": "piojo",
+    "player_name": "escudero",
+    "position": "df",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 5
+  },
+  {
+    "owner": "piojo",
+    "player_name": "victor diaz",
+    "position": "df",
+    "value": 2561000,
+    "clause": 3841500,
+    "points": 36
+  },
+  {
+    "owner": "piojo",
+    "player_name": "xavi quintilla",
+    "position": "df",
+    "value": 1229000,
+    "clause": 1843500,
+    "points": 21
+  },
+  {
+    "owner": "piojo",
+    "player_name": "alvaro vadillo",
+    "position": "mc",
+    "value": 648000,
+    "clause": 1000000,
+    "points": 20
+  },
+  {
+    "owner": "piojo",
+    "player_name": "illarramendi",
+    "position": "mc",
+    "value": 1412000,
+    "clause": 2118000,
+    "points": 12
+  },
+  {
+    "owner": "piojo",
+    "player_name": "iñigo perez",
+    "position": "mc",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "piojo",
+    "player_name": "oscar plano",
+    "position": "mc",
+    "value": 1815000,
+    "clause": 2722500,
+    "points": 34
+  },
+  {
+    "owner": "piojo",
+    "player_name": "raul garcia",
+    "position": "mc",
+    "value": 10326000,
+    "clause": 15489000,
+    "points": 46
+  },
+  {
+    "owner": "piojo",
+    "player_name": "luka jovic",
+    "position": "dl",
+    "value": 2762000,
+    "clause": 4143000,
+    "points": 15
+  },
+  {
+    "owner": "piojo",
+    "player_name": "dembele",
+    "position": "dl",
+    "value": 5144000,
+    "clause": 7716000,
+    "points": 10
+  },
+  {
+    "owner": "sambita",
+    "player_name": "yoel",
+    "position": "pt",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "sambita",
+    "player_name": "tejero",
+    "position": "df",
+    "value": 1526000,
+    "clause": 2289000,
+    "points": 29
+  },
+  {
+    "owner": "sambita",
+    "player_name": "jesus navas",
+    "position": "df",
+    "value": 9998000,
+    "clause": 14997000,
+    "points": 35
+  },
+  {
+    "owner": "sambita",
+    "player_name": "pau torres",
+    "position": "df",
+    "value": 2334000,
+    "clause": 3501000,
+    "points": 30
+  },
+  {
+    "owner": "sambita",
+    "player_name": "banega",
+    "position": "mc",
+    "value": 6862000,
+    "clause": 10293000,
+    "points": 33
+  },
+  {
+    "owner": "sambita",
+    "player_name": "kang-in lee",
+    "position": "mc",
+    "value": 688000,
+    "clause": 1032000,
+    "points": 17
+  },
+  {
+    "owner": "sambita",
+    "player_name": "darder",
+    "position": "mc",
+    "value": 3442000,
+    "clause": 5163000,
+    "points": 35
+  },
+  {
+    "owner": "sambita",
+    "player_name": "take kubo",
+    "position": "mc",
+    "value": 4673000,
+    "clause": 7009500,
+    "points": 19
+  },
+  {
+    "owner": "sambita",
+    "player_name": "kroos",
+    "position": "mc",
+    "value": 10320000,
+    "clause": 17736750,
+    "points": 64
+  },
+  {
+    "owner": "sambita",
+    "player_name": "carlos fernandez",
+    "position": "dl",
+    "value": 1292000,
+    "clause": 1938000,
+    "points": 28
+  },
+  {
+    "owner": "sambita",
+    "player_name": "bale",
+    "position": "dl",
+    "value": 9353000,
+    "clause": 14029500,
+    "points": 33
+  },
+  {
+    "owner": "gelete",
+    "player_name": "aitor fernandez",
+    "position": "pt",
+    "value": 4654000,
+    "clause": 6981000,
+    "points": 44
+  },
+  {
+    "owner": "gelete",
+    "player_name": "masip",
+    "position": "pt",
+    "value": 3817000,
+    "clause": 6725500,
+    "points": 19
+  },
+  {
+    "owner": "gelete",
+    "player_name": "mario gaspar",
+    "position": "df",
+    "value": 399000,
+    "clause": 1000000,
+    "points": 6
+  },
+  {
+    "owner": "gelete",
+    "player_name": "nacho vidal",
+    "position": "df",
+    "value": 2751000,
+    "clause": 4126500,
+    "points": 32
+  },
+  {
+    "owner": "gelete",
+    "player_name": "semedo",
+    "position": "df",
+    "value": 5034000,
+    "clause": 7551000,
+    "points": 24
+  },
+  {
+    "owner": "gelete",
+    "player_name": "ruben duarte",
+    "position": "df",
+    "value": 3018000,
+    "clause": 4527000,
+    "points": 22
+  },
+  {
+    "owner": "gelete",
+    "player_name": "ferran torres",
+    "position": "mc",
+    "value": 1158000,
+    "clause": 1737000,
+    "points": 15
+  },
+  {
+    "owner": "gelete",
+    "player_name": "campaña",
+    "position": "mc",
+    "value": 6237000,
+    "clause": 9355500,
+    "points": 40
+  },
+  {
+    "owner": "gelete",
+    "player_name": "moi gomez",
+    "position": "mc",
+    "value": 5941000,
+    "clause": 8911500,
+    "points": 40
+  },
+  {
+    "owner": "gelete",
+    "player_name": "canales",
+    "position": "mc",
+    "value": 9121000,
+    "clause": 13681500,
+    "points": 30
+  },
+  {
+    "owner": "gelete",
+    "player_name": "borja iglesias",
+    "position": "dl",
+    "value": 10265000,
+    "clause": 15397500,
+    "points": 27
+  },
+  {
+    "owner": "gelete",
+    "player_name": "juan villar",
+    "position": "dl",
+    "value": 197000,
+    "clause": 1000000,
+    "points": 9
+  },
+  {
+    "owner": "gelete",
+    "player_name": "ekambi",
+    "position": "dl",
+    "value": 3486000,
+    "clause": 6526500,
+    "points": 31
+  },
+  {
+    "owner": "pau",
+    "player_name": "alex remiro",
+    "position": "pt",
+    "value": 178000,
+    "clause": 1000000,
+    "points": 4
+  },
+  {
+    "owner": "pau",
+    "player_name": "asenjo",
+    "position": "pt",
+    "value": 3520000,
+    "clause": 5280000,
+    "points": 25
+  },
+  {
+    "owner": "pau",
+    "player_name": "odriozola",
+    "position": "df",
+    "value": 182000,
+    "clause": 1000000,
+    "points": 6
+  },
+  {
+    "owner": "pau",
+    "player_name": "lillo",
+    "position": "df",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 5
+  },
+  {
+    "owner": "pau",
+    "player_name": "savic",
+    "position": "df",
+    "value": 4823000,
+    "clause": 7234500,
+    "points": 32
+  },
+  {
+    "owner": "pau",
+    "player_name": "orellana",
+    "position": "mc",
+    "value": 5109000,
+    "clause": 7663500,
+    "points": 31
+  },
+  {
+    "owner": "pau",
+    "player_name": "coquelin",
+    "position": "mc",
+    "value": 3056000,
+    "clause": 4584000,
+    "points": 14
+  },
+  {
+    "owner": "pau",
+    "player_name": "pol lozano",
+    "position": "mc",
+    "value": 188000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "pau",
+    "player_name": "ruben perez",
+    "position": "mc",
+    "value": 534000,
+    "clause": 1000000,
+    "points": 18
+  },
+  {
+    "owner": "pau",
+    "player_name": "angel rodriguez",
+    "position": "dl",
+    "value": 3805000,
+    "clause": 5707500,
+    "points": 24
+  },
+  {
+    "owner": "pau",
+    "player_name": "portu",
+    "position": "dl",
+    "value": 5463000,
+    "clause": 8194500,
+    "points": 27
+  },
+  {
+    "owner": "pau",
+    "player_name": "gerard moreno",
+    "position": "dl",
+    "value": 11065000,
+    "clause": 16597500,
+    "points": 68
+  },
+  {
+    "owner": "pau",
+    "player_name": "stiven plaza",
+    "position": "dl",
+    "value": 195000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "rafita",
+    "player_name": "moya",
+    "position": "pt",
+    "value": 4559000,
+    "clause": 6838500,
+    "points": 37
+  },
+  {
+    "owner": "rafita",
+    "player_name": "clerc",
+    "position": "df",
+    "value": 1029000,
+    "clause": 1543500,
+    "points": 18
+  },
+  {
+    "owner": "rafita",
+    "player_name": "aguirregabiria",
+    "position": "df",
+    "value": 1122000,
+    "clause": 2002500,
+    "points": 18
+  },
+  {
+    "owner": "rafita",
+    "player_name": "nacho monreal",
+    "position": "df",
+    "value": 3197000,
+    "clause": 4795500,
+    "points": 20
+  },
+  {
+    "owner": "rafita",
+    "player_name": "aleix febas",
+    "position": "mc",
+    "value": 1257000,
+    "clause": 1885500,
+    "points": 20
+  },
+  {
+    "owner": "rafita",
+    "player_name": "antonio puertas",
+    "position": "mc",
+    "value": 4473000,
+    "clause": 6709500,
+    "points": 33
+  },
+  {
+    "owner": "rafita",
+    "player_name": "dani parejo",
+    "position": "mc",
+    "value": 13776000,
+    "clause": 21133500,
+    "points": 50
+  },
+  {
+    "owner": "rafita",
+    "player_name": "joaquin",
+    "position": "mc",
+    "value": 5560000,
+    "clause": 8430000,
+    "points": 37
+  },
+  {
+    "owner": "rafita",
+    "player_name": "manu trigueros",
+    "position": "mc",
+    "value": 190000,
+    "clause": 1000000,
+    "points": 10
+  },
+  {
+    "owner": "rafita",
+    "player_name": "ansu fati",
+    "position": "dl",
+    "value": 2409000,
+    "clause": 3613500,
+    "points": 32
+  },
+  {
+    "owner": "rafita",
+    "player_name": "brandon",
+    "position": "dl",
+    "value": 586000,
+    "clause": 1000000,
+    "points": 13
+  },
+  {
+    "owner": "angus",
+    "player_name": "unai simon",
+    "position": "pt",
+    "value": 4201000,
+    "clause": 6301500,
+    "points": 31
+  },
+  {
+    "owner": "angus",
+    "player_name": "carvajal",
+    "position": "df",
+    "value": 6906000,
+    "clause": 10359000,
+    "points": 31
+  },
+  {
+    "owner": "angus",
+    "player_name": "miramon",
+    "position": "df",
+    "value": 1207000,
+    "clause": 2343000,
+    "points": 21
+  },
+  {
+    "owner": "angus",
+    "player_name": "aidoo",
+    "position": "df",
+    "value": 2607000,
+    "clause": 3910500,
+    "points": 24
+  },
+  {
+    "owner": "angus",
+    "player_name": "quini",
+    "position": "df",
+    "value": 768000,
+    "clause": 1152000,
+    "points": 12
+  },
+  {
+    "owner": "angus",
+    "player_name": "tello",
+    "position": "mc",
+    "value": 1464000,
+    "clause": 2196000,
+    "points": 9
+  },
+  {
+    "owner": "angus",
+    "player_name": "eraso",
+    "position": "mc",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 7
+  },
+  {
+    "owner": "angus",
+    "player_name": "marc roca",
+    "position": "mc",
+    "value": 2600000,
+    "clause": 3900000,
+    "points": 26
+  },
+  {
+    "owner": "angus",
+    "player_name": "salva sevilla",
+    "position": "mc",
+    "value": 2489000,
+    "clause": 6666750,
+    "points": 24
+  },
+  {
+    "owner": "angus",
+    "player_name": "busquets",
+    "position": "mc",
+    "value": 7781000,
+    "clause": 11671500,
+    "points": 33
+  },
+  {
+    "owner": "angus",
+    "player_name": "luuk de jong",
+    "position": "dl",
+    "value": 4324000,
+    "clause": 6486000,
+    "points": 23
+  },
+  {
+    "owner": "angus",
+    "player_name": "wu lei",
+    "position": "dl",
+    "value": 1531000,
+    "clause": 2634300,
+    "points": 16
+  },
+  {
+    "owner": "angus",
+    "player_name": "en nesyri",
+    "position": "dl",
+    "value": 2619000,
+    "clause": 3928500,
+    "points": 18
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "pacheco",
+    "position": "pt",
+    "value": 5976000,
+    "clause": 8964000,
+    "points": 31
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "dmitrovic",
+    "position": "pt",
+    "value": 2787000,
+    "clause": 4180500,
+    "points": 24
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "bartra",
+    "position": "df",
+    "value": 4049000,
+    "clause": 6073500,
+    "points": 20
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "mario hermoso",
+    "position": "df",
+    "value": 3935000,
+    "clause": 5902500,
+    "points": 8
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "bustinza",
+    "position": "df",
+    "value": 674000,
+    "clause": 1011000,
+    "points": 14
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "aleix vidal",
+    "position": "mc",
+    "value": 2322000,
+    "clause": 3483000,
+    "points": 23
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "muniain",
+    "position": "mc",
+    "value": 5701000,
+    "clause": 8551500,
+    "points": 33
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "javi garcia",
+    "position": "mc",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 10
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "odegaard",
+    "position": "mc",
+    "value": 8908000,
+    "clause": 13362000,
+    "points": 55
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "alex alegria",
+    "position": "dl",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 12
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "bacca",
+    "position": "dl",
+    "value": 1285000,
+    "clause": 1927500,
+    "points": 11
+  },
+  {
+    "owner": "pelayo",
+    "player_name": "avila",
+    "position": "dl",
+    "value": 6992000,
+    "clause": 11878500,
+    "points": 28
+  },
+  {
+    "owner": "soraya",
+    "player_name": "rui silva",
+    "position": "pt",
+    "value": 3342000,
+    "clause": 5013000,
+    "points": 38
+  },
+  {
+    "owner": "soraya",
+    "player_name": "arbilla",
+    "position": "df",
+    "value": 1573000,
+    "clause": 2359500,
+    "points": 27
+  },
+  {
+    "owner": "soraya",
+    "player_name": "bruno gonzalez",
+    "position": "df",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 1
+  },
+  {
+    "owner": "soraya",
+    "player_name": "damian",
+    "position": "df",
+    "value": 2027000,
+    "clause": 3040500,
+    "points": 20
+  },
+  {
+    "owner": "soraya",
+    "player_name": "nacho fernandez",
+    "position": "df",
+    "value": 303000,
+    "clause": 1000000,
+    "points": 8
+  },
+  {
+    "owner": "soraya",
+    "player_name": "guardado",
+    "position": "mc",
+    "value": 1641000,
+    "clause": 2461500,
+    "points": 13
+  },
+  {
+    "owner": "soraya",
+    "player_name": "mikel merino",
+    "position": "mc",
+    "value": 5239000,
+    "clause": 7858500,
+    "points": 35
+  },
+  {
+    "owner": "soraya",
+    "player_name": "pape diop",
+    "position": "mc",
+    "value": 690000,
+    "clause": 1035000,
+    "points": 14
+  },
+  {
+    "owner": "soraya",
+    "player_name": "toni villa",
+    "position": "mc",
+    "value": 410000,
+    "clause": 1000000,
+    "points": 7
+  },
+  {
+    "owner": "soraya",
+    "player_name": "nolito",
+    "position": "dl",
+    "value": 4102000,
+    "clause": 6153000,
+    "points": 36
+  },
+  {
+    "owner": "soraya",
+    "player_name": "santi mina",
+    "position": "dl",
+    "value": 5348000,
+    "clause": 8022000,
+    "points": 21
+  },
+  {
+    "owner": "soraya",
+    "player_name": "sergi guardiola",
+    "position": "dl",
+    "value": 6225000,
+    "clause": 9337500,
+    "points": 30
+  },
+  {
+    "owner": "perita",
+    "player_name": "areola",
+    "position": "pt",
+    "value": 634000,
+    "clause": 1082445,
+    "points": 4
+  },
+  {
+    "owner": "perita",
+    "player_name": "jonathan silva",
+    "position": "df",
+    "value": 1684000,
+    "clause": 2526000,
+    "points": 23
+  },
+  {
+    "owner": "perita",
+    "player_name": "kiko olivas",
+    "position": "df",
+    "value": 2688000,
+    "clause": 6078983,
+    "points": 27
+  },
+  {
+    "owner": "perita",
+    "player_name": "paulo oliveira",
+    "position": "df",
+    "value": 1720000,
+    "clause": 2580000,
+    "points": 32
+  },
+  {
+    "owner": "perita",
+    "player_name": "januzaj",
+    "position": "mc",
+    "value": 1861000,
+    "clause": 2791500,
+    "points": 22
+  },
+  {
+    "owner": "perita",
+    "player_name": "fede valverde",
+    "position": "mc",
+    "value": 308000,
+    "clause": 1000000,
+    "points": 11
+  },
+  {
+    "owner": "perita",
+    "player_name": "fran merida",
+    "position": "mc",
+    "value": 451000,
+    "clause": 1000000,
+    "points": 21
+  },
+  {
+    "owner": "perita",
+    "player_name": "franco vazquez",
+    "position": "mc",
+    "value": 1776000,
+    "clause": 2664000,
+    "points": 26
+  },
+  {
+    "owner": "perita",
+    "player_name": "rakitic",
+    "position": "mc",
+    "value": 5058000,
+    "clause": 7587000,
+    "points": 8
+  },
+  {
+    "owner": "perita",
+    "player_name": "oliver torres",
+    "position": "mc",
+    "value": 1638000,
+    "clause": 2457000,
+    "points": 25
+  },
+  {
+    "owner": "perita",
+    "player_name": "isak",
+    "position": "dl",
+    "value": 2907000,
+    "clause": 6087993,
+    "points": 24
+  },
+  {
+    "owner": "perita",
+    "player_name": "gabriel fernandez",
+    "position": "dl",
+    "value": 537000,
+    "clause": 1144515,
+    "points": 13
+  },
+  {
+    "owner": "keko",
+    "player_name": "joel",
+    "position": "pt",
+    "value": 3422000,
+    "clause": 5133000,
+    "points": 23
+  },
+  {
+    "owner": "keko",
+    "player_name": "piccini",
+    "position": "df",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 7
+  },
+  {
+    "owner": "keko",
+    "player_name": "diego llorente",
+    "position": "df",
+    "value": 2174000,
+    "clause": 3261000,
+    "points": 22
+  },
+  {
+    "owner": "keko",
+    "player_name": "felipe",
+    "position": "df",
+    "value": 894000,
+    "clause": 1341000,
+    "points": 10
+  },
+  {
+    "owner": "keko",
+    "player_name": "francis",
+    "position": "df",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "keko",
+    "player_name": "bryan gil",
+    "position": "mc",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 2
+  },
+  {
+    "owner": "keko",
+    "player_name": "hernani",
+    "position": "mc",
+    "value": 472000,
+    "clause": 1000000,
+    "points": 20
+  },
+  {
+    "owner": "keko",
+    "player_name": "ibai gomez",
+    "position": "mc",
+    "value": 759000,
+    "clause": 1138500,
+    "points": 12
+  },
+  {
+    "owner": "keko",
+    "player_name": "luis rioja",
+    "position": "mc",
+    "value": 470000,
+    "clause": 1000000,
+    "points": 16
+  },
+  {
+    "owner": "keko",
+    "player_name": "lemar",
+    "position": "mc",
+    "value": 3163000,
+    "clause": 4744500,
+    "points": 17
+  },
+  {
+    "owner": "keko",
+    "player_name": "abdon prats",
+    "position": "dl",
+    "value": 186000,
+    "clause": 1000000,
+    "points": 1
+  },
+  {
+    "owner": "keko",
+    "player_name": "rodri rios",
+    "position": "dl",
+    "value": 210000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "keko",
+    "player_name": "rodrigo",
+    "position": "dl",
+    "value": 10103000,
+    "clause": 15154500,
+    "points": 34
+  },
+  {
+    "owner": "percha",
+    "player_name": "cillessen",
+    "position": "pt",
+    "value": 5951000,
+    "clause": 8926500,
+    "points": 28
+  },
+  {
+    "owner": "percha",
+    "player_name": "domenech",
+    "position": "pt",
+    "value": 166000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "percha",
+    "player_name": "elustondo",
+    "position": "df",
+    "value": 901000,
+    "clause": 1351500,
+    "points": 16
+  },
+  {
+    "owner": "percha",
+    "player_name": "calero",
+    "position": "df",
+    "value": 1874000,
+    "clause": 2811000,
+    "points": 8
+  },
+  {
+    "owner": "percha",
+    "player_name": "iñigo martinez",
+    "position": "df",
+    "value": 4744000,
+    "clause": 7116000,
+    "points": 30
+  },
+  {
+    "owner": "percha",
+    "player_name": "marcelo",
+    "position": "df",
+    "value": 5869000,
+    "clause": 8803500,
+    "points": 14
+  },
+  {
+    "owner": "percha",
+    "player_name": "carlos soler",
+    "position": "mc",
+    "value": 1846000,
+    "clause": 2769000,
+    "points": 4
+  },
+  {
+    "owner": "percha",
+    "player_name": "casemiro",
+    "position": "mc",
+    "value": 9662000,
+    "clause": 14493000,
+    "points": 49
+  },
+  {
+    "owner": "percha",
+    "player_name": "granero",
+    "position": "mc",
+    "value": 413000,
+    "clause": 1000000,
+    "points": 12
+  },
+  {
+    "owner": "percha",
+    "player_name": "fran beltran",
+    "position": "mc",
+    "value": 411000,
+    "clause": 1000000,
+    "points": 3
+  },
+  {
+    "owner": "percha",
+    "player_name": "zubeldia",
+    "position": "mc",
+    "value": 4393000,
+    "clause": 6589500,
+    "points": 23
+  },
+  {
+    "owner": "percha",
+    "player_name": "gameiro",
+    "position": "dl",
+    "value": 6300000,
+    "clause": 9450000,
+    "points": 20
+  },
+  {
+    "owner": "percha",
+    "player_name": "munir",
+    "position": "dl",
+    "value": 1233000,
+    "clause": 1849500,
+    "points": 10
+  },
+  {
+    "owner": "percha",
+    "player_name": "vinicius",
+    "position": "dl",
+    "value": 4171000,
+    "clause": 7665000,
+    "points": 14
+  },
+  {
+    "owner": "galo",
+    "player_name": "javi diaz",
+    "position": "pt",
+    "value": 208000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "galo",
+    "player_name": "djene",
+    "position": "df",
+    "value": 3970000,
+    "clause": 0,
+    "points": 13
+  },
+  {
+    "owner": "galo",
+    "player_name": "gaya",
+    "position": "df",
+    "value": 4919000,
+    "clause": 0,
+    "points": 15
+  },
+  {
+    "owner": "galo",
+    "player_name": "olaza",
+    "position": "df",
+    "value": 1044000,
+    "clause": 0,
+    "points": 24
+  },
+  {
+    "owner": "galo",
+    "player_name": "sergi gomez",
+    "position": "df",
+    "value": 201000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "galo",
+    "player_name": "montoro",
+    "position": "mc",
+    "value": 2543000,
+    "clause": 0,
+    "points": 42
+  },
+  {
+    "owner": "galo",
+    "player_name": "brais mendez",
+    "position": "mc",
+    "value": 2282000,
+    "clause": 0,
+    "points": 17
+  },
+  {
+    "owner": "galo",
+    "player_name": "cheryshev",
+    "position": "mc",
+    "value": 991000,
+    "clause": 0,
+    "points": 19
+  },
+  {
+    "owner": "galo",
+    "player_name": "portillo",
+    "position": "mc",
+    "value": 191000,
+    "clause": 1000000,
+    "points": 16
+  },
+  {
+    "owner": "galo",
+    "player_name": "arnaiz",
+    "position": "mc",
+    "value": 414000,
+    "clause": 1000000,
+    "points": 18
+  },
+  {
+    "owner": "galo",
+    "player_name": "recio",
+    "position": "mc",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 10
+  },
+  {
+    "owner": "galo",
+    "player_name": "sobrino",
+    "position": "dl",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 4
+  },
+  {
+    "owner": "diego",
+    "player_name": "adan",
+    "position": "pt",
+    "value": 167000,
+    "clause": 1000000,
+    "points": 3
+  },
+  {
+    "owner": "diego",
+    "player_name": "sergio alvarez",
+    "position": "pt",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "diego",
+    "player_name": "hugo mallo",
+    "position": "df",
+    "value": 1866000,
+    "clause": 2799000,
+    "points": 19
+  },
+  {
+    "owner": "diego",
+    "player_name": "kjaer",
+    "position": "df",
+    "value": 455000,
+    "clause": 1000000,
+    "points": 0
+  },
+  {
+    "owner": "diego",
+    "player_name": "laguardia",
+    "position": "df",
+    "value": 3129000,
+    "clause": 4693500,
+    "points": 13
+  },
+  {
+    "owner": "diego",
+    "player_name": "arthur",
+    "position": "mc",
+    "value": 7099000,
+    "clause": 10648500,
+    "points": 44
+  },
+  {
+    "owner": "diego",
+    "player_name": "brasanac",
+    "position": "mc",
+    "value": 160000,
+    "clause": 1000000,
+    "points": 5
+  },
+  {
+    "owner": "diego",
+    "player_name": "pione sisto",
+    "position": "mc",
+    "value": 196000,
+    "clause": 1000000,
+    "points": 13
+  },
+  {
+    "owner": "diego",
+    "player_name": "rochina",
+    "position": "mc",
+    "value": 4672000,
+    "clause": 7008000,
+    "points": 30
+  },
+  {
+    "owner": "diego",
+    "player_name": "sergio leon",
+    "position": "dl",
+    "value": 1919000,
+    "clause": 2878500,
+    "points": 20
+  }
+]
