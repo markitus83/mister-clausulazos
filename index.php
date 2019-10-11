@@ -1,28 +1,33 @@
 <?php
-  //https://www.csvjson.com/csv2json
-  //https://phptest-ginodev.codeanyapp.com/mister.php
 
-  require_once('templates/v1/mister_part1.html');
+  // Twig
+  require_once __DIR__ . '/vendor/autoload.php';
 
-  //https://www.codewall.co.uk/how-to-read-json-file-using-php-examples/
-  // Get the contents of the JSON file 
-  $strJsonFileContents = file_get_contents("data/my-team.json");
-  // Convert to array 
-  $my_team = json_decode($strJsonFileContents, true);
+  $loader = new \Twig\Loader\FilesystemLoader('templates/twig');
+  $twig = new \Twig\Environment($loader, [
+      //'cache' => 'cache',
+    'debug' => true,
+  ]);
 
-  //https://www.php.net/manual/es/function.array-multisort.php
-  $my_team_sorted = $my_team;
-  foreach ($my_team_sorted as $key => $player) {
-      $col_points[$key] = $player['points'];
-      $col_value[$key] = $player['value'];
-      $col_clause[$key] = $player['clause'];
+  $getJsonFileContents = file_get_contents('data/my-team.json');
+  $myTeam = json_decode($getJsonFileContents, true);
+
+  $myTeamSorted = $myTeam;
+  foreach ($myTeamSorted as $key => $player) {
+      $colPoints[$key] = $player['points'];
+      $colValue[$key] = $player['value'];
+      $colClause[$key] = $player['clause'];
   }
-  array_multisort($col_points, SORT_DESC, $my_team_sorted);
+  array_multisort($colPoints, SORT_DESC, $myTeamSorted);
 
-  // print my team
-  require_once('templates/v1/mister_part2.html');  
-  echo '<h2>My team</h2>';
-  print_team_table($my_team);
+  echo $twig->render('index.html', 
+    [
+      'myTeam' => $myTeam,
+    ]
+  );
+
+/*
+  
 
   //https://www.php.net/manual/es/function.array-multisort.php
   foreach ($my_team as $key => $player) {
@@ -30,8 +35,10 @@
       $col_value[$key] = $player['value'];
       $col_clause[$key] = $player['clause'];
   }
+  var_dump($my_team);
   array_multisort($col_points, SORT_DESC, $my_team);
   echo '<h2>My team (sorted by points)</h2>';
+  var_dump($my_team);
   print_team_table($my_team);
 
 
@@ -184,3 +191,4 @@
 
     echo '</tbody></table>';
   }
+*/
