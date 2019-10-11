@@ -8,10 +8,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Mister :: Hexágono imberbe</title>
   </head>
   <body>
-    <h1>Hello, world! Hello {{ name }}</h1>
+    <h1>Mister :: Hexágono imberbe - Clausulazos v.1.1.0</h1>
+    
+    <div class="container">
+      <h2>
+        My Team
+      </h2>
+      <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Owner</th>
+          <th scope="col">PLayer Name</th>
+          <th scope="col">Points</th>
+          <th scope="col">Position</th>
+          <th scope="col">Value</th>
+          <th scope="col">Clause</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for player in myTeam %}
+          {% set badge_position = '' %}
+          {% if player['position'] == 'pt' %}
+            {% set badge_position = 'badge badge-warning' %}
+          {% elseif player['position'] == 'df' %}
+            {% set badge_position = 'badge badge-primary' %}
+          {% elseif player['position'] == 'mc' %}
+            {% set badge_position = 'badge badge-success' %}
+          {% elseif player['position'] == 'dl' %}
+            {% set badge_position = 'badge badge-danger' %}
+          {% endif %}
+          <tr>
+          <td scope="row">{{ loop.index }}</td>
+          <td><span class="badge badge-info">{{ player['owner']|capitalize }}</span></td>
+          <td>{{ player['player_name']|capitalize }}</td>
+          <td>{{ player['points'] }}</td>
+            <td><span class="{{ badge_position }}">{{ player['position']|upper }}</span></td>
+          <td>{{ player['value'] }}</td>
+          <td>{{ player['clause'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
