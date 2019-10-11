@@ -44,13 +44,10 @@ class __TwigTemplate_d9307248ba428c60936086c41cac326ef412bf4061436362041980ad407
     <!-- Bootstrap CSS -->
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
 
-    <title>Hello, world!</title>
+    <title>Mister :: Hexágono imberbe</title>
   </head>
   <body>
-    <h1>Hello, world! Hello ";
-        // line 14
-        echo twig_escape_filter($this->env, ($context["name"] ?? null), "html", null, true);
-        echo "</h1>
+    <h1>Mister :: Hexágono imberbe - Clausulazos v.1.1.0</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -66,14 +63,9 @@ class __TwigTemplate_d9307248ba428c60936086c41cac326ef412bf4061436362041980ad407
         return "index.html";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  52 => 14,  37 => 1,);
+        return array (  37 => 1,);
     }
 
     public function getSourceContext()
