@@ -19,5 +19,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Initial test of parse data and print
 
-## [1.1.0] - 2019-10-X
+## [1.1.0] - 2019-10-11
 ### Added
+- Install Twig
+- Create .gitignore file
+- Create new structure for Twig
+- New templates
+
+### Changed
+- Update main file to use Twig
+
+### Removed
+- Old templates structure
