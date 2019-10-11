@@ -23,6 +23,7 @@
   echo $twig->render('index.html', 
     [
       'myTeam' => $myTeam,
+      'myTeamSorted' => $myTeamSorted,
     ]
   );
 

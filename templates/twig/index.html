@@ -11,47 +11,98 @@
     <title>Mister :: Hexágono imberbe</title>
   </head>
   <body>
-    <h1>Mister :: Hexágono imberbe - Clausulazos v.1.1.0</h1>
-    
     <div class="container">
-      <h2>
-        My Team
-      </h2>
-      <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Owner</th>
-          <th scope="col">PLayer Name</th>
-          <th scope="col">Points</th>
-          <th scope="col">Position</th>
-          <th scope="col">Value</th>
-          <th scope="col">Clause</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for player in myTeam %}
-          {% set badge_position = '' %}
-          {% if player['position'] == 'pt' %}
-            {% set badge_position = 'badge badge-warning' %}
-          {% elseif player['position'] == 'df' %}
-            {% set badge_position = 'badge badge-primary' %}
-          {% elseif player['position'] == 'mc' %}
-            {% set badge_position = 'badge badge-success' %}
-          {% elseif player['position'] == 'dl' %}
-            {% set badge_position = 'badge badge-danger' %}
-          {% endif %}
-          <tr>
-          <td scope="row">{{ loop.index }}</td>
-          <td><span class="badge badge-info">{{ player['owner']|capitalize }}</span></td>
-          <td>{{ player['player_name']|capitalize }}</td>
-          <td>{{ player['points'] }}</td>
-            <td><span class="{{ badge_position }}">{{ player['position']|upper }}</span></td>
-          <td>{{ player['value'] }}</td>
-          <td>{{ player['clause'] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
+      <h1>Mister :: Hexágono imberbe - Clausulazos v.1.1.0</h1>
+      <h2>My Team</h2>
+      
+      <p>
+        <button id="buttonMyTeam" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeam" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeam">
+          Sorted by position
+        </button>
+        <button id="buttonMyTeamSorted" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeamSorted" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+          Sorted by points
+        </button>
+      </p>
+      <div class="collapse multi-collapse" id="collapseMyTeam">
+        <div class="card card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Owner</th>
+                <th scope="col">PLayer Name</th>
+                <th scope="col">Points</th>
+                <th scope="col">Position</th>
+                <th scope="col">Value</th>
+                <th scope="col">Clause</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for player in myTeam %}
+                {% set badge_position = '' %}
+                {% if player['position'] == 'pt' %}
+                  {% set badge_position = 'badge badge-warning' %}
+                {% elseif player['position'] == 'df' %}
+                  {% set badge_position = 'badge badge-primary' %}
+                {% elseif player['position'] == 'mc' %}
+                  {% set badge_position = 'badge badge-success' %}
+                {% elseif player['position'] == 'dl' %}
+                  {% set badge_position = 'badge badge-danger' %}
+                {% endif %}
+                <tr>
+                <td scope="row">{{ loop.index }}</td>
+                <td><span class="badge badge-info">{{ player['owner']|capitalize }}</span></td>
+                <td>{{ player['player_name']|capitalize }}</td>
+                <td>{{ player['points'] }}</td>
+                  <td><span class="{{ badge_position }}">{{ player['position']|upper }}</span></td>
+                <td>{{ player['value'] }}</td>
+                <td>{{ player['clause'] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="collapse multi-collapse" id="collapseMyTeamSorted">
+        <div class="card card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Owner</th>
+                <th scope="col">PLayer Name</th>
+                <th scope="col">Points</th>
+                <th scope="col">Position</th>
+                <th scope="col">Value</th>
+                <th scope="col">Clause</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for player in myTeamSorted %}
+                {% set badge_position = '' %}
+                {% if player['position'] == 'pt' %}
+                  {% set badge_position = 'badge badge-warning' %}
+                {% elseif player['position'] == 'df' %}
+                  {% set badge_position = 'badge badge-primary' %}
+                {% elseif player['position'] == 'mc' %}
+                  {% set badge_position = 'badge badge-success' %}
+                {% elseif player['position'] == 'dl' %}
+                  {% set badge_position = 'badge badge-danger' %}
+                {% endif %}
+                <tr>
+                <td scope="row">{{ loop.index }}</td>
+                <td><span class="badge badge-info">{{ player['owner']|capitalize }}</span></td>
+                <td>{{ player['player_name']|capitalize }}</td>
+                <td>{{ player['points'] }}</td>
+                  <td><span class="{{ badge_position }}">{{ player['position']|upper }}</span></td>
+                <td>{{ player['value'] }}</td>
+                <td>{{ player['clause'] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -59,5 +110,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="js/mister.js"></script>
   </body>
 </html>
