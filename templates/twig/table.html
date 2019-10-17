@@ -1,0 +1,38 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Owner</th>
+      <th scope="col">Player Name</th>
+      <th scope="col">Team</th>
+      <th scope="col">Points</th>
+      <th scope="col">Position</th>
+      <th scope="col">Value</th>
+      <th scope="col">Clause</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for player in data %}
+      {% set badge_position = '' %}
+      {% if player['position'] == 'pt' %}
+        {% set badge_position = 'badge badge-warning' %}
+      {% elseif player['position'] == 'df' %}
+        {% set badge_position = 'badge badge-primary' %}
+      {% elseif player['position'] == 'mc' %}
+        {% set badge_position = 'badge badge-success' %}
+      {% elseif player['position'] == 'dl' %}
+        {% set badge_position = 'badge badge-danger' %}
+      {% endif %}
+      <tr>
+      <td scope="row">{{ loop.index }}</td>
+      <td><span class="badge badge-info">{{ player['owner']|capitalize }}</span></td>
+      <td>{{ player['player_name']|ucwords }}</td>
+      <td><img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/></td>
+      <td>{{ player['points'] }}</td>
+        <td><span class="{{ badge_position }}">{{ player['position']|upper }}</span></td>
+      <td>{{ player['value']|format_currency('EUR') }}</td>
+      <td>{{ player['clause']|format_currency('EUR') }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
