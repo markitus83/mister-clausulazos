@@ -1,106 +1,119 @@
 [
   {
     "owner": "marc",
-    "player_name": "ruben",
+    "player_name": "rubén martinez",
     "position": "pt",
-    "value": 2618000,
-    "clause": 3927000,
+    "team": "osasuna",
+    "value": 3365000,
+    "clause": 5047500,
+    "points": 31
+  },
+  {
+    "owner": "marc",
+    "player_name": "néstor araujo",
+    "position": "df",
+    "team": "celta",
+    "value": 1865000,
+    "clause": 2797500,
+    "points": 34
+  },
+  {
+    "owner": "marc",
+    "player_name": "rúben vezo",
+    "position": "df",
+    "team": "levante",
+    "value": 1923000,
+    "clause": 2884500,
     "points": 26
   },
   {
     "owner": "marc",
-    "player_name": "n araujo",
+    "player_name": "salilsu",
     "position": "df",
-    "value": 1555000,
-    "clause": 2332500,
-    "points": 28
+    "team": "valladolid",
+    "value": 2802000,
+    "clause": 4203000,
+    "points": 30
   },
   {
     "owner": "marc",
-    "player_name": "r vezo",
+    "player_name": "sergio reguilon",
     "position": "df",
-    "value": 2542000,
-    "clause": 3813000,
-    "points": 24
-  },
-  {
-    "owner": "marc",
-    "player_name": "salisu",
-    "position": "df",
-    "value": 2207000,
-    "clause": 3310500,
-    "points": 24
-  },
-  {
-    "owner": "marc",
-    "player_name": "reguilon",
-    "position": "df",
-    "value": 8087000,
+    "team": "sevilla",
+    "value": 10052000,
     "clause": 12130500,
-    "points": 33
+    "points": 35
   },
   {
     "owner": "marc",
-    "player_name": "yeary",
+    "player_name": "yeray álvarez",
     "position": "df",
+    "team": "bilbao",
     "value": 5440000,
     "clause": 8160000,
-    "points": 31
+    "points": 35
   },
   {
     "owner": "marc",
     "player_name": "fernando",
     "position": "mc",
+    "team": "sevilla",
     "value": 5242000,
     "clause": 7863000,
-    "points": 27
+    "points": 31
   },
   {
     "owner": "marc",
-    "player_name": "ontiveros",
+    "player_name": "javier ontiveros",
     "position": "mc",
+    "team": "villareal",
     "value": 1914000,
     "clause": 4448907,
-    "points": 32
+    "points": 35
   },
   {
     "owner": "marc",
-    "player_name": "lobotka",
+    "player_name": "marc cucurella",
     "position": "mc",
-    "value": 2211000,
-    "clause": 4303500,
-    "points": 22
-  },
-  {
-    "owner": "marc",
-    "player_name": "cucurella",
-    "position": "mc",
+    "team": "getafe",
     "value": 8441000,
     "clause": 12661500,
-    "points": 31
+    "points": 35
   },
   {
     "owner": "marc",
     "player_name": "thomas",
     "position": "mc",
+    "team": "atlmadrid",
     "value": 5180000,
     "clause": 7770000,
-    "points": 35
+    "points": 36
   },
   {
     "owner": "marc",
-    "player_name": "i williams",
+    "player_name": "iñaki williams",
     "position": "dl",
+    "team": "bilbao",
     "value": 9987000,
     "clause": 14980500,
-    "points": 29
+    "points": 30
   },
   {
     "owner": "marc",
-    "player_name": "lucas perez",
+    "player_name": "lucas pérez",
     "position": "dl",
+    "team": "alaves",
     "value": 1663000,
     "clause": 2494500,
-    "points": 25
+    "points": 36
+  },
+  {
+    "owner": "marc",
+    "player_name": "wu lei",
+    "position": "dl",
+    "team": "espanyol",
+    "value": 899000,
+    "clause": 2797500,
+    "points": 18
   }
 ]

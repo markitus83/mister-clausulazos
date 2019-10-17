@@ -1,14 +1,24 @@
 <?php
 
   // Twig
-  require_once __DIR__ . '/vendor/autoload.php';
+    require_once __DIR__ . '/vendor/autoload.php';
 
-  $loader = new \Twig\Loader\FilesystemLoader('templates/twig');
-  $twig = new \Twig\Environment($loader, [
-      //'cache' => 'cache',
-    'debug' => true,
-  ]);
+    use Twig\Extra\Intl\IntlExtension;
 
+    $filter = new \Twig\TwigFilter('ucwords', function ($string) {
+      return ucwords($string);
+    });
+
+    $loader = new \Twig\Loader\FilesystemLoader('templates/twig');
+    $twig = new \Twig\Environment($loader, [
+        //'cache' => 'cache',
+      'debug' => true,
+    ]);
+    $twig->addExtension(new IntlExtension());
+    $twig->addFilter($filter);
+  // End Twig
+
+  // My team
   $getJsonFileContents = file_get_contents('data/my-team.json');
   $myTeam = json_decode($getJsonFileContents, true);
 
@@ -20,38 +30,11 @@
   }
   array_multisort($colPoints, SORT_DESC, $myTeamSorted);
 
-  echo $twig->render('index.html', 
-    [
-      'myTeam' => $myTeam,
-      'myTeamSorted' => $myTeamSorted,
-    ]
-  );
+  // All other teams
+  $getJsonFileContents = file_get_contents("data/teams.json");
+  $teams = json_decode($getJsonFileContents, true);
 
-/*
-  
-
-  //https://www.php.net/manual/es/function.array-multisort.php
-  foreach ($my_team as $key => $player) {
-      $col_points[$key] = $player['points'];
-      $col_value[$key] = $player['value'];
-      $col_clause[$key] = $player['clause'];
-  }
-  var_dump($my_team);
-  array_multisort($col_points, SORT_DESC, $my_team);
-  echo '<h2>My team (sorted by points)</h2>';
-  var_dump($my_team);
-  print_team_table($my_team);
-
-
-  // other teams
-  $strJsonFileContents = file_get_contents("data/teams.json");
-  // Convert to array 
-  $array = json_decode($strJsonFileContents, true);
-
-  echo '<h2>All players</h2>';
-  foreach ($array as $idx => $player) {
-    //$player['idx'] = $idx;
-    //print_player($player);    
+  foreach ($teams as $player) {    
     switch ($player['position']) {
       case 'pt':
         $players['pt'][] = $player;
@@ -68,128 +51,43 @@
     }
   }
 
+  unset($colPoints);
   foreach ($players['pt'] as $clave => $fila) {
-      $col_points[$clave] = $fila['points'];
+      $colPoints[$clave] = $fila['points'];
   }
-  array_multisort($col_points, SORT_DESC, $players['pt']);
-  echo '<h2>Players by positions: PT</h2>';
-  print_team_table($players['pt']);
-  unset($col_points);
+  array_multisort($colPoints, SORT_DESC, $players['pt']);
+  unset($colPoints);
 
+  unset($colPoints);
   foreach ($players['df'] as $clave => $fila) {
-      $col_points[$clave] = $fila['points'];
+      $colPoints[$clave] = $fila['points'];
   }
-  array_multisort($col_points, SORT_DESC, $players['df']);
-  echo '<h2>Players by positions: DF</h2>';
-  print_team_table($players['df']);
-  unset($col_points);
+  array_multisort($colPoints, SORT_DESC, $players['df']);
+  unset($colPoints);
 
+  unset($colPoints);
   foreach ($players['mc'] as $clave => $fila) {
-      $col_points[$clave] = $fila['points'];
+      $colPoints[$clave] = $fila['points'];
   }
-  array_multisort($col_points, SORT_DESC, $players['mc']);
-  echo '<h2>Players by positions: MC</h2>';
-  print_team_table($players['mc']);
-  unset($col_points);
+  array_multisort($colPoints, SORT_DESC, $players['mc']);
+  unset($colPoints);
 
+  unset($colPoints);
   foreach ($players['dl'] as $clave => $fila) {
-      $col_points[$clave] = $fila['points'];
+      $colPoints[$clave] = $fila['points'];
   }
-  array_multisort($col_points, SORT_DESC, $players['dl']);
-  echo '<h2>Players by positions: DL</h2>';
-  print_team_table($players['dl']);
+  array_multisort($colPoints, SORT_DESC, $players['dl']);
+  unset($colPoints);
 
 
-  require_once('templates/v1/mister_part3.html');
-
-  function print_player($player) {
-    $owner = '<span class="badge badge-info">'.$player['owner'].'</span>';
-    
-    $points = '<span class="badge badge-secondary">'.$player['points'].'</span>';
-    
-    switch ($player['position']) {
-      case 'pt':
-        $badge_position = '<span class="badge badge-warning">PT</span>';
-        break;
-      case 'df':
-        $badge_position = '<span class="badge badge-primary">DF</span>';
-        break;
-      case 'mc':
-        $badge_position = '<span class="badge badge-success">MC</span>';
-        break;
-      case 'dl':
-        $badge_position = '<span class="badge badge-danger">DL</span>';
-        break;
-      default:
-        $badge_position = '';
-        break;
-    }
-    
-    $value = number_format($player['value'], 0, '', '.');
-    $clause = number_format($player['clause'], 0, '', '.');    
-    
-    echo ($player['idx']+1) . ' # ' . 
-      $owner . ' # ' .
-      $player['player_name'] . ' # ' . 
-      $points . ' # ' .
-      $badge_position . ' # ' . 
-      $value . ' # ' . 
-      $clause . '<br/>';
-  }
-
-  function print_team_table($players) {
-    echo '
-    <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Owner</th>
-        <th scope="col">PLayer Name</th>
-        <th scope="col">Points</th>
-        <th scope="col">Position</th>
-        <th scope="col">Value</th>
-        <th scope="col">Clause</th>
-      </tr>
-    </thead>
-    <tbody>';
-
-    foreach ($players as $idx => $player) {
-      $owner = '<span class="badge badge-info">'.$player['owner'].'</span>';
-
-      $points = '<span class="badge badge-secondary">'.$player['points'].'</span>';
-
-      switch ($player['position']) {
-        case 'pt':
-          $badge_position = '<span class="badge badge-warning">PT</span>';
-          break;
-        case 'df':
-          $badge_position = '<span class="badge badge-primary">DF</span>';
-          break;
-        case 'mc':
-          $badge_position = '<span class="badge badge-success">MC</span>';
-          break;
-        case 'dl':
-          $badge_position = '<span class="badge badge-danger">DL</span>';
-          break;
-        default:
-          $badge_position = '';
-          break;
-      }
-
-      $value = number_format($player['value'], 0, '', '.');
-      $clause = number_format($player['clause'], 0, '', '.');  
-
-      echo '<tr>
-        <th scope="row">'.($idx+1).'</th>
-        <td>'.$owner.'</td>
-        <td>'.$player['player_name'].'</td>
-        <td>'.$points.'</td>
-        <td>'.$badge_position.'</td>
-        <td>'.$value.'</td>
-        <td>'.$clause.'</td>
-      </tr>';
-    }
-
-    echo '</tbody></table>';
-  }
-*/
+  // Send to view
+  echo $twig->render('index.html', 
+    [
+      'myTeam' => $myTeam,
+      'myTeamSorted' => $myTeamSorted,
+      'goalkeeper' => $players['pt'],
+      'defender' => $players['df'],
+      'midfielder' => $players['mc'],
+      'forward' => $players['dl'],
+    ]
+  );

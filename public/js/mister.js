@@ -1,5 +1,4 @@
 // Custom JS for this project
-
 $('#collapseMyTeam').on('show.bs.collapse', function () {
   $('#collapseMyTeamSorted').collapse('hide');
   $('#buttonMyTeam').addClass('active');

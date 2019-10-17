@@ -25,9 +25,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Create .gitignore file
 - Create new structure for Twig
 - New templates
+- Add Twig Extension to show currency data
+- Create Twig Filter to show names better
 
 ### Changed
 - Update main file to use Twig
 
 ### Removed
 - Old templates structure
+- Old code
