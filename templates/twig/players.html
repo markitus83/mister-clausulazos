@@ -1,0 +1,13 @@
+<form action="" method="post" id="formSelectUser">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Selecciona usuario</label>
+    <select class="form-control" id="selectUser" name="selectUser">
+      <option value="no_user" selected="selected">-</option>
+      {% for player in data %}
+        {% set currentUser = (player['player_name'] == username) ? 'selected':'' %}
+        <option value="{{ player['player_name'] }}" {{ currentUser }}>{{ player['player_name']|ucwords }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary" id="buttonSelectUser">Ver equipo</button>
+</form>

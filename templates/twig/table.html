@@ -1,4 +1,5 @@
-<table class="table table-striped">
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -25,7 +26,7 @@
       {% endif %}
       <tr>
       <td scope="row">{{ loop.index }}</td>
-      <td><span class="badge badge-info">{{ player['owner']|capitalize }}</span></td>
+      <td><span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span></td>
       <td>{{ player['player_name']|ucwords }}</td>
       <td><img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/></td>
       <td>{{ player['points'] }}</td>
@@ -36,3 +37,4 @@
     {% endfor %}
   </tbody>
 </table>
+</div>
