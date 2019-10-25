@@ -34,3 +34,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Old templates structure
 - Old code
+
+## [1.2.0] - 2019-10-25
+### Added
+- Form to select users and show their info
+- New section to show advices
+- Add custom CSS file
+
+### Changed
+- Fix custom filter Twig
+- Update templates
+- Update custom JS file
+
+### Removed
+- Old code

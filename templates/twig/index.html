@@ -7,68 +7,214 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/mister.css" type="text/css">
 
     <title>Mister :: Hexágono imberbe</title>
   </head>
   <body>
     <div class="container">
       <h1>Mister :: Hexágono imberbe - Clausulazos v.1.1.0</h1>
-      <h2>Mi equipo</h2>
       
-      <p>
-        <button id="buttonMyTeam" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeam" aria-pressed="true" aria-expanded="true" aria-controls="collapseMyTeam">
-          Sorted by position
-        </button>
-        <button id="buttonMyTeamSorted" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeamSorted" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-          Sorted by points
-        </button>
-      </p>
-      <div class="collapse multi-collapse" id="collapseMyTeam">
-        <div class="card card-body">
-          {% include 'table.html' with {data: myTeam} %}
-        </div>
-      </div>
-      <div class="collapse multi-collapse" id="collapseMyTeamSorted">
-        <div class="card card-body">
-          {% include 'table.html' with {data: myTeamSorted} %}
-        </div>
-      </div>
+      {% include 'players.html' with {data: users} %}
       
-      <h2>Resto jugadores</h2>
-      <p>
-        <button id="buttonGoalkeeper" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#goalkeeper" aria-pressed="true" aria-expanded="true" aria-controls="collapseMyTeam">
-          Porteros :: Sorted by position
-        </button>
-        <button id="buttonDefender" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#defender" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-          Defensas :: Sorted by points
-        </button>        
-        <button id="buttonMidfielder" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#midfielder" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-          Medios :: Sorted by points
-        </button>        
-        <button id="buttonForward" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#forward" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-          Delanteros :: Sorted by points
-        </button>
-      </p>
-      <div class="collapse multi-collapse" id="goalkeeper">
-        <div class="card card-body">
-          {% include 'table.html' with {data: goalkeeper} %}
+      {% if username is not empty %}
+        <div class="mister-container">
+          <h2>Mi equipo</h2>      
+          <p>
+            <button id="buttonMyTeam" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeam" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeam">
+              Sorted by position
+            </button>
+            <button id="buttonMyTeamSorted" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeamSorted" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+              Sorted by points
+            </button>
+          </p>
+          <div class="collapse multi-collapse" id="collapseMyTeam">
+            <div class="card card-body">
+              {% include 'table.html' with {data: myTeam} %}
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="collapseMyTeamSorted">
+            <div class="card card-body">
+              {% include 'table.html' with {data: myTeamSorted} %}
+            </div>
+          </div>
+
+          <h2>Resto jugadores</h2>
+          <p>
+            <button id="buttonGoalkeeper" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#goalkeeper" aria-pressed="true" aria-expanded="true" aria-controls="collapseMyTeam">
+              Porteros :: Sorted by position
+            </button>
+            <button id="buttonDefender" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#defender" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+              Defensas :: Sorted by points
+            </button>        
+            <button id="buttonMidfielder" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#midfielder" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+              Medios :: Sorted by points
+            </button>        
+            <button id="buttonForward" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#forward" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+              Delanteros :: Sorted by points
+            </button>
+          </p>
+          <div class="collapse multi-collapse" id="goalkeeper">
+            <div class="card card-body">
+              {% include 'table.html' with {data: goalkeeper} %}
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="defender">
+            <div class="card card-body">
+              {% include 'table.html' with {data: defender} %}
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="midfielder">
+            <div class="card card-body">
+              {% include 'table.html' with {data: midfielder} %}
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="forward">
+            <div class="card card-body">
+              {% include 'table.html' with {data: forward} %}
+            </div>
+          </div>
+
+          <h2>Mundo Maldini</h2>
+          <div class="media">
+            <img src="public/images/maldini_v2.png" class="mr-3" alt="Consejos de Maldini" width="64" height="64">
+            <div class="media-body">
+              Aqui te presento una lista de posibles clausulazos que te pueden interesar. <br />
+              Recuerda que tienes que cumplir con el límite de jugadores en tu equipo y disponer de suficiente dinero
+            </div>
+          </div>
+
+          {% if countMyTeam == 13 %}
+            <p><div class="alert alert-warning" role="alert">
+              Ya tienes el máximo de jugadores permitidos, vende antes de fichar o multazo!
+            </div></p>
+          {% elseif countMyTeam > 13 %}
+            <p><div class="alert alert-danger" role="alert">
+              Buff, sigue asi, menudo multazo te caerá, vende vende vende!!
+            </div></p>
+          {% endif %}
+
+          <p>Estos son los jugadores que te sugiero</p>
+          <div class="accordion" id="accordionMaldini">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Porteros
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionMaldini">
+              <div class="card-body">
+                {% for position,players in maldiniAdvice %}
+                  {% if position == 'advicePt' %}
+                    <ul>
+                    {% for idx,player in players %}
+                      <li>
+                        <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {{ player['player_name']|capitalize|ucwords }}
+                        <strong>Puntos: </strong>{{player['points']}}
+                        <strong>Valor: </strong>{{ player['value']|format_currency('EUR') }}
+                        <strong>Cláusula: </strong>{{ player['clause']|format_currency('EUR') }}
+                      </li>  
+                    {% endfor %}
+                    </ul>  
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Defensas
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMaldini">
+              <div class="card-body">
+                {% for position,players in maldiniAdvice %}
+                  {% if position == 'adviceDf' %}
+                    <ul>
+                    {% for idx,player in players %}
+                      <li>
+                        <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {{ player['player_name']|capitalize|ucwords }}
+                        <strong>Puntos: </strong>{{player['points']}}
+                        <strong>Valor: </strong>{{ player['value']|format_currency('EUR') }}
+                        <strong>Cláusula: </strong>{{ player['clause']|format_currency('EUR') }}
+                      </li>  
+                    {% endfor %}
+                    </ul>  
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Medios
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMaldini">
+              <div class="card-body">
+                {% for position,players in maldiniAdvice %}
+                  {% if position == 'adviceMc' %}
+                    <ul>
+                    {% for idx,player in players %}
+                      <li>
+                        <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {{ player['player_name']|capitalize|ucwords }}
+                        <strong>Puntos: </strong>{{player['points']}}
+                        <strong>Valor: </strong>{{ player['value']|format_currency('EUR') }}
+                        <strong>Cláusula: </strong>{{ player['clause']|format_currency('EUR') }}
+                      </li>  
+                    {% endfor %}
+                    </ul>  
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Delanteros
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMaldini">
+              <div class="card-body">
+                {% for position,players in maldiniAdvice %}
+                  {% if position == 'adviceDl' %}
+                    <ul>
+                    {% for idx,player in players %}
+                      <li>
+                        <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {{ player['player_name']|capitalize|ucwords }}
+                        <strong>Puntos: </strong>{{player['points']}}
+                        <strong>Valor: </strong>{{ player['value']|format_currency('EUR') }}
+                        <strong>Cláusula: </strong>{{ player['clause']|format_currency('EUR') }}
+                      </li>  
+                    {% endfor %}
+                    </ul>  
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>   
         </div>
-      </div>
-      <div class="collapse multi-collapse" id="defender">
-        <div class="card card-body">
-          {% include 'table.html' with {data: defender} %}
-        </div>
-      </div>
-      <div class="collapse multi-collapse" id="midfielder">
-        <div class="card card-body">
-          {% include 'table.html' with {data: midfielder} %}
-        </div>
-      </div>
-      <div class="collapse multi-collapse" id="forward">
-        <div class="card card-body">
-          {% include 'table.html' with {data: forward} %}
-        </div>
-      </div>
+      {% endif %}
     </div>
     
     <!-- Optional JavaScript -->
