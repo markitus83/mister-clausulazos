@@ -1,22 +1,82 @@
 [
-  { "player_name": "juan" },
-  { "player_name": "ginete" },
-  { "player_name": "jesus gil" },
-  { "player_name": "oli" },
-  { "player_name": "nando" },
-  { "player_name": "lucho" },
-  { "player_name": "sambita" },
-  { "player_name": "puskas" },
-  { "player_name": "gelete" },
-  { "player_name": "pau" },
-  { "player_name": "piojo" },
-  { "player_name": "pelayo" },
-  { "player_name": "angus" },
-  { "player_name": "rafita" },
-  { "player_name": "soraya" },
-  { "player_name": "perita" },
-  { "player_name": "keko" },
-  { "player_name": "percha" },
-  { "player_name": "galo" },
-  { "player_name": "diegoto" }
+  {
+    "player_name": "juan",
+    "password": "juan"
+  },
+  {
+    "player_name": "ginete",
+    "password": "ginete"
+  },
+  {
+    "player_name": "jesus gil",
+    "password": "jesusgil"
+  },
+  {
+    "player_name": "oli",
+    "password": "oli"
+  },
+  {
+    "player_name": "nando",
+    "password": "nando"
+  },
+  {
+    "player_name": "lucho",
+    "password": "lucho"
+  },
+  {
+    "player_name": "sambita",
+    "password": "sambita"
+  },
+  {
+    "player_name": "puskas",
+    "password": "puskas"
+  },
+  {
+    "player_name": "gelete",
+    "password": "gelete"
+  },
+  {
+    "player_name": "pau",
+    "password": "pau"
+  },
+  {
+    "player_name": "piojo",
+    "password": "piojo"
+  },
+  {
+    "player_name": "pelayo",
+    "password": "pelayo"
+  },
+  {
+    "player_name": "angus",
+    "password": "angus"
+  },
+  {
+    "player_name": "rafita",
+    "password": "rafita"
+  },
+  {
+    "player_name": "soraya",
+    "password": "soraya"
+  },
+  {
+    "player_name": "perita",
+    "password": "perita"
+  },
+  {
+    "player_name": "keko",
+    "password": "keko"
+  },
+  {
+    "player_name": "percha",
+    "password": "percha"
+  },
+  {
+    "player_name": "galo",
+    "password": "galo"
+  },
+  {
+    "player_name": "diegoto",
+    "password": "diegoto"
+  }
 ]

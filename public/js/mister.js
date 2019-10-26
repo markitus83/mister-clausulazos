@@ -17,15 +17,74 @@ $("#formSelectUser").submit(function( event ) {
   
 });
 
-// collapse
+// collapse players table
 $('#collapseMyTeam').on('show.bs.collapse', function () {
   $('#collapseMyTeamSorted').collapse('hide');
   $('#buttonMyTeam').addClass('active');
   $('#buttonMyTeamSorted').removeClass('active');
 });
+$('#collapseMyTeam').on('hidden.bs.collapse', function () {
+  $('#buttonMyTeam').removeClass('active');
+})
 
 $('#collapseMyTeamSorted').on('show.bs.collapse', function () {
   $('#collapseMyTeam').collapse('hide');
   $('#buttonMyTeamSorted').addClass('active');
   $('#buttonMyTeam').removeClass('active');
 });
+$('#collapseMyTeamSorted').on('hidden.bs.collapse', function () {
+  $('#buttonMyTeamSorted').removeClass('active');
+})
+
+$('#goalkeeper').on('show.bs.collapse', function () {
+  $('#defender').collapse('hide');
+  $('#midfielder').collapse('hide');
+  $('#forward').collapse('hide');    
+  $('#buttonGoalkeeper').addClass('active');  
+  $('#buttonDefender').removeClass('active');
+  $('#buttonMidfielder').removeClass('active');
+  $('#buttonForward').removeClass('active');
+});
+$('#goalkeeper').on('hidden.bs.collapse', function () {
+  $('#buttonGoalkeeper').removeClass('active');
+})
+
+$('#defender').on('show.bs.collapse', function () {
+  $('#goalkeeper').collapse('hide');
+  $('#midfielder').collapse('hide');
+  $('#forward').collapse('hide');    
+  $('#buttonDefender').addClass('active');  
+  $('#buttonGoalkeeper').removeClass('active');
+  $('#buttonMidfielder').removeClass('active');
+  $('#buttonForward').removeClass('active');
+});
+$('#defender').on('hidden.bs.collapse', function () {
+  $('#buttonDefender').removeClass('active');
+})
+
+$('#midfielder').on('show.bs.collapse', function () {
+  $('#goalkeeper').collapse('hide');
+  $('#defender').collapse('hide');
+  $('#forward').collapse('hide');    
+  $('#buttonMidfielder').addClass('active');  
+  $('#buttonGoalkeeper').removeClass('active');
+  $('#buttonDefender').removeClass('active');
+  $('#buttonForward').removeClass('active');
+});
+$('#midfielder').on('hidden.bs.collapse', function () {
+  $('#buttonMidfielder').removeClass('active');
+})
+
+$('#forward').on('show.bs.collapse', function () {
+  $('#goalkeeper').collapse('hide');
+  $('#defender').collapse('hide');
+  $('#midfielder').collapse('hide');    
+  $('#buttonForward').addClass('active');  
+  $('#buttonGoalkeeper').removeClass('active');
+  $('#buttonDefender').removeClass('active');
+  $('#buttonMidfielder').removeClass('active');
+});
+$('#forward').on('hidden.bs.collapse', function () {
+  $('#buttonForward').removeClass('active');
+})
+

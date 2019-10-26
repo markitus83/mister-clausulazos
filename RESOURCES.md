@@ -6,3 +6,5 @@
 - https://getbootstrap.com/
 - https://www.php.net/manual/es/function.mb-convert-case.php
 - https://stackoverflow.com/questions/6661530/php-multidimensional-array-search-by-value
+- https://www.w3schools.in/php-script/php-login-without-using-database/
+- https://cybmeta.com/como-registrar-y-utilizar-autoloaders-en-php

@@ -1,5 +1,9 @@
-/* Custom JS for this project */
+/* Custom CSS for this project */
 
 .alert-no-user {
   display: none;
+}
+
+.buttonsPlayers > .row > div {
+  padding: 10px;
 }

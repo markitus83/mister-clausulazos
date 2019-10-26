@@ -49,12 +49,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Old code
 
-## [1.3.0] - 2019-10-XX
+## [1.3.0] - 2019-10-26
 ### Added
-- Add user login
+- Add autoload file
+- Login for users
 
 ### Changed
-- XX
+- Add custom JS functions
+- Add custom CSS styles
+- Refactor templates
 
 ### Removed
-- XX
+- Delete files unused

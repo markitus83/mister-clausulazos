@@ -1,22 +1,7 @@
-<?php
+<?php  
+  session_start();
 
-  // Twig
-    require_once __DIR__ . '/vendor/autoload.php';
-
-    use Twig\Extra\Intl\IntlExtension;
-
-    $filter = new \Twig\TwigFilter('ucwords', function ($string) {
-      return  mb_convert_case($string, MB_CASE_TITLE, "UTF-8");
-    });
-
-    $loader = new \Twig\Loader\FilesystemLoader('templates/twig');
-    $twig = new \Twig\Environment($loader, [
-        //'cache' => 'cache',
-      'debug' => true,
-    ]);
-    $twig->addExtension(new IntlExtension());
-    $twig->addFilter($filter);
-  // End Twig
+  require_once __DIR__ . '/misterAutoload.php';
 
   if (date_default_timezone_get()) {
       //echo 'date_default_timezone_set: ' . date_default_timezone_get() . '<br />';
@@ -27,6 +12,15 @@
     print_r(date('l jS \of F Y h:i:s A'));
   }
 
+  // User login
+  if (!isset($_SESSION['userData']['userName'])) {
+    header("location:login.php");
+    exit;
+  } else {
+    $username = $_SESSION['userData']['userName'];
+    $myTeam = getTeamByUser($username);
+  }
+
 
 
 
@@ -35,19 +29,19 @@
   $users = json_decode($getJsonFileContents, true);
 
   // Select user team by form
-  $username = '';
-  if (!empty($_POST) && isset($_POST['selectUser']) && $_POST['selectUser'] != 'no_user') {
-    $username = $_POST['selectUser'];
-    $myTeam = getTeamByUser($_POST['selectUser']);
-  } else {
-    echo $twig->render('index.html', 
-      [
-        'username' => $username,
-        'users' => $users,
-      ]
-    );
-    die;
-  }
+//   $username = '';
+//   if (!empty($_POST) && isset($_POST['selectUser']) && $_POST['selectUser'] != 'no_user') {
+//     $username = $_POST['selectUser'];
+//     $myTeam = getTeamByUser($_POST['selectUser']);
+//   } else {
+//     echo $twig->render('index.html', 
+//       [
+//         'username' => $username,
+//         'users' => $users,
+//       ]
+//     );
+//     die;
+//   }
 
   // My team
   //$getJsonFileContents = file_get_contents('data/my-team.json');

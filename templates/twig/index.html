@@ -13,19 +13,20 @@
   </head>
   <body>
     <div class="container">
-      <h1>Mister :: Hexágono imberbe - Clausulazos v.1.1.0</h1>
+      <h1>Mister :: Hexágono imberbe - Clausulazos v.1.3.0</h1>
       
-      {% include 'players.html' with {data: users} %}
+<!--       {% include 'players.html' with {data: users} %} -->
       
       {% if username is not empty %}
         <div class="mister-container">
-          <h2>Mi equipo</h2>      
+          <h2>Mi equipo</h2>
+          <p>Hola {{ username|ucwords }}, aqui puedes ver la información de tu equipo.<a href="logout.php">Desconectar</a></p>
           <p>
             <button id="buttonMyTeam" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeam" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeam">
-              Sorted by position
+              Ver equipo
             </button>
             <button id="buttonMyTeamSorted" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeamSorted" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-              Sorted by points
+              Ver equipo por puntos
             </button>
           </p>
           <div class="collapse multi-collapse" id="collapseMyTeam">
@@ -39,21 +40,31 @@
             </div>
           </div>
 
-          <h2>Resto jugadores</h2>
-          <p>
-            <button id="buttonGoalkeeper" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#goalkeeper" aria-pressed="true" aria-expanded="true" aria-controls="collapseMyTeam">
-              Porteros :: Sorted by position
-            </button>
-            <button id="buttonDefender" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#defender" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-              Defensas :: Sorted by points
-            </button>        
-            <button id="buttonMidfielder" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#midfielder" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-              Medios :: Sorted by points
-            </button>        
-            <button id="buttonForward" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#forward" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
-              Delanteros :: Sorted by points
-            </button>
-          </p>
+          <h2>Jugadores disponibles</h2>
+          <div class="buttonsPlayers">
+            <div class="row">
+              <div class="col-3 col-sm-3 text-center">
+                <button id="buttonGoalkeeper" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#goalkeeper" aria-pressed="true" aria-expanded="true" aria-controls="collapseMyTeam">
+                  PT
+                </button>
+              </div>
+              <div class="col-3 col-sm-3 text-center">
+                <button id="buttonDefender" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#defender" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+                  DF
+                </button>
+              </div>
+              <div class="col-3 col-sm-3 text-center">
+                <button id="buttonMidfielder" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#midfielder" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+                  MC
+                </button>  
+              </div>
+              <div class="col-3 col-sm-3 text-center">
+                <button id="buttonForward" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#forward" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+                  DL
+                </button>
+              </div>
+            </div>
+          </div>          
           <div class="collapse multi-collapse" id="goalkeeper">
             <div class="card card-body">
               {% include 'table.html' with {data: goalkeeper} %}
