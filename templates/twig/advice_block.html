@@ -1,0 +1,180 @@
+<h2 class="section">Mundo Maldini</h2>
+  <div class="media">
+    <img src="public/images/maldini_v2.png" class="mr-3" alt="Consejos de Maldini" width="64" height="64">
+    <div class="media-body">
+      Aqui te presento una lista de posibles clausulazos que te pueden interesar. <br />
+      Recuerda que tienes que cumplir con el límite de jugadores en tu equipo y disponer de suficiente dinero
+    </div>
+  </div>
+
+  {% if countMyTeam == 13 %}
+  <p>
+    <div class="alert alert-warning" role="alert">Ya tienes el máximo de jugadores permitidos, vende antes de fichar o multazo!</div>
+  </p>
+  {% elseif countMyTeam > 13 %}
+    <p>
+      <div class="alert alert-danger" role="alert">Buff, sigue asi, menudo multazo te caerá, vende vende vende!!</div>
+  </p>
+  {% endif %}
+
+  <p>Estos son los jugadores que te sugiero</p>
+  <div class="accordion" id="accordionMaldini">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Porteros</button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionMaldini">
+        <div class="card-body">
+          {% for position,players in maldiniAdvice %}
+            {% if position == 'advicePt' %}
+              <ul class="player-list">
+                {% for idx,player in players %}
+                  <li>
+                    <div class="player-row">
+                      <div class="icons">
+                        {% if player['team'] is not empty %}
+                          <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {% endif %}
+                        <span class="badge badge-pill badge-dark">{{ player['points'] }}</span>
+                      </div>
+                      <div class="info">
+                        <div class="player">
+                          {{ player['player_name']|capitalize|ucwords }}
+                          <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        </div>
+                        <div class="values">
+                          <span class="badge badge-light">VM {{ player['value']|format_currency('EUR') }}</span>
+                          <span class="badge badge-light">VC {{ player['clause']|format_currency('EUR') }}</span>
+                        </div>                            
+                      </div>
+                    </div>
+                  </li>  
+                {% endfor %}
+              </ul>  
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Defensas</button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMaldini">
+        <div class="card-body">
+          {% for position,players in maldiniAdvice %}
+            {% if position == 'adviceDf' %}
+              <ul class="player-list">
+                {% for idx,player in players %}
+                  <li>
+                    <div class="player-row">
+                      <div class="icons">
+                        {% if player['team'] is not empty %}
+                          <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {% endif %}
+                        <span class="badge badge-pill badge-dark">{{ player['points'] }}</span>
+                      </div>
+                      <div class="info">
+                        <div class="player">
+                          {{ player['player_name']|capitalize|ucwords }}
+                          <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        </div>
+                        <div class="values">
+                          <span class="badge badge-light">VM {{ player['value']|format_currency('EUR') }}</span>
+                          <span class="badge badge-light">VC {{ player['clause']|format_currency('EUR') }}</span>
+                        </div>                            
+                      </div>
+                    </div>
+                  </li>  
+                {% endfor %}
+              </ul>  
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Medios</button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMaldini">
+        <div class="card-body">
+          {% for position,players in maldiniAdvice %}
+            {% if position == 'adviceMc' %}
+              <ul class="player-list">
+                {% for idx,player in players %}
+                  <li>
+                    <div class="player-row">
+                      <div class="icons">
+                        {% if player['team'] is not empty %}
+                          <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {% endif %}
+                        <span class="badge badge-pill badge-dark">{{ player['points'] }}</span>
+                      </div>
+                      <div class="info">
+                        <div class="player">
+                          {{ player['player_name']|capitalize|ucwords }}
+                          <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        </div>
+                        <div class="values">
+                          <span class="badge badge-light">VM {{ player['value']|format_currency('EUR') }}</span>
+                          <span class="badge badge-light">VC {{ player['clause']|format_currency('EUR') }}</span>
+                        </div>                            
+                      </div>
+                    </div>
+                  </li>  
+                {% endfor %}
+              </ul>  
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Delanteros</button>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMaldini">
+        <div class="card-body">
+          {% for position,players in maldiniAdvice %}
+            {% if position == 'adviceDl' %}
+              <ul class="player-list">
+                {% for idx,player in players %}
+                  <li>
+                    <div class="player-row">
+                      <div class="icons">
+                        {% if player['team'] is not empty %}
+                          <img src="{{ 'public/images/teams/' ~ player['team'] ~ '.png' }}" height="20" width="20" alt="{{ player['team'] }}"/>
+                        {% endif %}
+                        <span class="badge badge-pill badge-dark">{{ player['points'] }}</span>
+                      </div>
+                      <div class="info">
+                        <div class="player">
+                          {{ player['player_name']|capitalize|ucwords }}
+                          <span class="badge badge-info">{{ player['owner']|capitalize|ucwords }}</span>
+                        </div>
+                        <div class="values">
+                          <span class="badge badge-light">VM {{ player['value']|format_currency('EUR') }}</span>
+                          <span class="badge badge-light">VC {{ player['clause']|format_currency('EUR') }}</span>
+                        </div>                            
+                      </div>
+                    </div>
+                  </li>  
+                {% endfor %}
+              </ul>  
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>

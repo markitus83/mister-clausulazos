@@ -1,0 +1,20 @@
+<h2 class="section">Mi equipo</h2>
+<p>Hola {{ username|ucwords }}, aqui puedes ver la información de tu equipo.<a href="logout.php">Desconectar</a></p>
+<p>
+  <button id="buttonMyTeam" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeam" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeam">
+    Ver equipo
+  </button>
+  <button id="buttonMyTeamSorted" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMyTeamSorted" aria-pressed="true" aria-expanded="false" aria-controls="collapseMyTeamSorted">
+    Ver equipo por puntos
+  </button>
+</p>
+<div class="collapse multi-collapse" id="collapseMyTeam">
+  <div class="card card-body">
+    {% include 'table.html' with {data: myTeam} %}
+  </div>
+</div>
+<div class="collapse multi-collapse" id="collapseMyTeamSorted">
+  <div class="card card-body">
+    {% include 'table.html' with {data: myTeamSorted} %}
+  </div>
+</div>

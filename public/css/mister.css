@@ -4,6 +4,33 @@
   display: none;
 }
 
+.section {
+  background-color: #f8f9fa;
+}
+
 .buttonsPlayers > .row > div {
   padding: 10px;
+}
+
+/* advice block */
+.card-body ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card-body ul li {
+  padding-bottom: 12px;
+}
+
+.player-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player-row .icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 45px;
+  justify-content: center;
 }

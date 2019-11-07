@@ -8,3 +8,5 @@
 - https://stackoverflow.com/questions/6661530/php-multidimensional-array-search-by-value
 - https://www.w3schools.in/php-script/php-login-without-using-database/
 - https://cybmeta.com/como-registrar-y-utilizar-autoloaders-en-php
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://iconos8.es/icons/set/locker
