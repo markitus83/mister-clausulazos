@@ -1,5 +1,35 @@
 // Custom JS for this project
 
+// login by Ajax call
+$(document).ready(function() {
+  $( "#formLoginUser" ).submit(function( event ) {
+    event.preventDefault();
+
+    var data = $('#formLoginUser').serialize();
+
+    $.ajax({
+      type: "POST",
+      url: "https://devel1-ginodev.codeanyapp.com/ajaxLogin.php",
+      data: data,
+      success: function(data) {
+        if (JSON.parse(data).errorLogin) {
+          $("#errorLogin").removeClass('d-none');
+          $("#errorLogin").addClass('d-all');
+        } else {
+        $("#errorLogin").removeClass('d-all');
+        $("#errorLogin").addClass('d-none');
+        location.href = 'https://devel1-ginodev.codeanyapp.com';
+       }
+      }
+    });
+  });
+});
+
+// hide error login without rmeove it from DOM
+$("#errorLogin > button.close").on('click', function(){
+  $("#errorLogin").removeClass('d-all');
+  $("#errorLogin").addClass('d-none');
+});
 
 
 // check user
@@ -13,8 +43,7 @@ $("#formSelectUser").submit(function( event ) {
     }
     event.preventDefault();
     $('.mister-container').remove();
-  } 
-  
+  }   
 });
 
 // collapse players table
